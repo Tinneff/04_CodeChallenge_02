@@ -16,3 +16,26 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+// Daniels lösung
+
+let alter, name;
+
+alter = prompt("Bitte Alter angeben:");
+nutzer = prompt("Bitte Namen angeben:");switch (true)
+{
+        case (alter <=5):
+            console.log(nutzer +" trinkt Milch");
+            break;
+        case (alter >= 6 && alter <=12):
+            console.log(nutzer +" trinkt Saft");
+            break;
+        case (alter >=13 && alter <18):
+            console.log(nutzer +" trinkt Cola");
+            break;
+        case (alter >=18):
+            console.log(nutzer +" trinkt Wein");
+            break;
+        default:
+            console.log("Eingabe bitte prüfen!");
+            break    
+}
